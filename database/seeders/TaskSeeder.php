@@ -21,5 +21,17 @@ class TaskSeeder extends Seeder
         $task->user_id = User::find(1)->id;
         $task->save();
 
+
+        $task = new Task();
+        $task->title = 'Task 2';
+        $task->description = 'This is a task';
+        $task->user_id = User::find(1)->id;
+        $task->save();
+
+        $task = new Task();
+        $task->title = 'Task 3';
+        $task->description = 'This is a task';
+        $task->user_id = User::find(2)->id;
+        $task->save();
     }
 }

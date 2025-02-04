@@ -10,21 +10,9 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     <h1 class=" rounded p-2 text-center text-3xl text-yellow-500">Bienvenido al gestor de tareas</h1>
-                    <!-- {{ __("You're logged in!") }} -->
 
-                    <!-- {{Auth::user() -> tasks -> count()}} -->
+                    @livewire('task-component')
 
-                    <!-- forEach para todas las tareas de un usuario -->
-                     @foreach (Auth::user() -> tasks as $task)
-
-                    <p class="mt-4 text-lg text-yellow-500 rounded p-2 ">
-                        {{ $task->title }}
-                    </p>
-                    <p>
-                        {{ $task->description }}
-
-                    </p>
-                    @endforeach
                 </div>
             </div>
         </div>
